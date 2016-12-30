@@ -1,8 +1,11 @@
-#!/bin/bash -ex
+#!/bin/bash
 #
 # Instantiate a SoftHSM token, then run tests, including the benchmark. Provide
 # flags allowing the benchmark to use the SoftHSM token.
 #
+
+set -e
+set -x
 
 if [ -r /proc/brcm_monitor0 ]; then
   echo "The /proc/brcm_monitor0 file has open permissions. Please run"
