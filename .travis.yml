@@ -14,4 +14,5 @@ env:
     - GODEBUG=cgocheck=2
 
 script:
+  - dpkg -L libsofthsm
   - ./test.sh
