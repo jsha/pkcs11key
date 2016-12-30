@@ -15,4 +15,4 @@ env:
 
 script:
   - dpkg -L libsofthsm
-  - ./test.sh
+  - bash -ex test.sh
